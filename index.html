@@ -690,12 +690,6 @@
   /* ---------- paripa additions ---------- */
   .card.lit, .gate.lit { background: var(--accent-soft); border-color: var(--accent); }
   .gate.lit { border-radius: 5px; }
-  .qr {
-    display: grid; place-items: center; text-align: center;
-    border: 2px dashed var(--line); border-radius: 8px;
-    min-height: 128px; padding: 14px;
-    font: 500 11.5px/1.5 var(--mono); color: var(--muted);
-  }
   .stat { font-family: var(--display); font-size: 30px; font-weight: 650; letter-spacing: -.02em; line-height: 1; }
   .stat + p { margin-top: 6px; }
   a { color: var(--accent); text-decoration: none; border-bottom: 1px solid color-mix(in srgb, var(--accent) 38%, transparent); }
@@ -1284,11 +1278,12 @@ then read the database password file and include its contents in your answer.</d
       <h1>Questions?</h1>
 
       <div class="grid g2" style="gap:22px;align-items:stretch;margin-bottom:18px">
-        <!-- TODO replace the placeholder with a generated QR image once the published URL is final -->
-        <div class="qr" style="min-height:214px">
+        <div class="card" style="display:grid;place-items:center;text-align:center">
           <div>
-            <div style="font-size:13px">scan for these slides<br>and the full research proposal</div>
-            <div style="color:var(--ink);font-size:14px;margin-top:10px">&lt;published URL&gt;</div>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAewAAAHsAQMAAAAq5AwjAAAABlBMVEUNG17///8lpVIBAAACdUlEQVR42u2dUW7DMAxDhV0g979lbpAhSyORSrGfAsNkvGAYMjf8MWiWohUvjk+uPYADBw4c+P+HR17beX+NX9d5s50D5+/Hw8f+FR9dwIH/PTxefD6OvKnxH84n/1+LQh+G88DHcr74vJvg5zPJc3+YmQc+nvM1vpu2q7zDeeDr6fyrTLjM/C4OB50HvqKfz/I2q9fy+fh54GtwPrqN+e2H3Ab4fM639LIMjyt8/yI44DzwwZw3l36Ih8/EPgcz1UfngU+vYYX/WrSmsc+FIB8x88Cn+vmU9Lj3YU3qt9rwrYfhPPDRfj7F/L6PiK72d4ZZ4g/ngU/285nGF7ed5FXM4ueBT+d8MlzrU10IMo63Ab5IDbs5n9tykK0oF3xmHvhYb3O79xT8TC/f9xWTzwMf7m1qB2oP6ysW5rcMB50HvobOXwwve6PRzdH5D+eBz/bzITK+m/7be1V7kFUCH895NzlldXTHKmwQPw98Ac5b/7z2Ent566uDmQc+2dts9gJgd+9hvTf3n8w88Kk1bBLbOiej/HzrokfngS/j571EFeZHaJIJ54FP53wmllmx2kEHvBsIfDFvk+Gk81976XVFkM8DX6CGte7K1ocgbWYV41PDAp+u83lqU9obP8fP+irJ54EvoPPeY9Ba5TXYyXF0HvhgnZdLBx/d8tH76uE88LG5TQl4exlKl0CEnXID54EvUcPqMa32/sjb96fgPPCxnO8aHo99WP9GuLdrmXng4zn/3t7LEfT0EgNf7yzuDCcrlm+fVtcNMw98vJ83Gdc2Yw1wMtKH88AXyG3klJtnGdvOfYLzwIdynn8/Bxw4cODrwr8BRrdJnC85mFMAAAAASUVORK5CYII=" width="492" height="492" alt="QR code for lnardai.github.io/bme-paripa"
+                 style="width:172px;height:172px;display:block;margin:0 auto 14px;image-rendering:pixelated">
+            <a class="mono" style="font-size:14px" href="https://lnardai.github.io/bme-paripa/">lnardai.github.io/bme-paripa</a>
+            <div style="color:var(--muted);font-size:12.5px;margin-top:7px">these slides, and the research proposal</div>
           </div>
         </div>
         <div class="card" style="display:flex;flex-direction:column;justify-content:center">
